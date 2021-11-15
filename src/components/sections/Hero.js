@@ -79,43 +79,6 @@ const Hero = ({
               </div>
             </div>
           </div>
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <div className="match-history row" style={{height: 100, width: "100%", marginBottom: '25px'}}>
-				<img src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png" style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>
-				<p className="match-score" style={{display: 'flex', flex: 1, transform: 'translate(40%, 100%)'}}>13-9</p>
-				<p className="kda" style={{display: 'flex', flex: '1', transform: 'translate(80%, -50%)'}}>22/12/5</p>
-				
-				
-            </div>
-			<div className="match-history row" style={{height: 100, width: "100%", marginBottom: '25px'}}>
-				<img src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png" style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>
-				<p className="match-score" style={{display: 'flex', flex: 1, transform: 'translate(40%, 100%)'}}>13-9</p>
-				<p className="kda" style={{display: 'flex', flex: '1', transform: 'translate(80%, -50%)'}}>22/12/5</p>
-				
-				
-            </div>
-			<div className="match-history row" style={{height: 100, width: "100%", marginBottom: '25px'}}>
-				<img src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png" style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>
-				<p className="match-score" style={{display: 'flex', flex: 1, transform: 'translate(40%, 100%)'}}>13-9</p>
-				<p className="kda" style={{display: 'flex', flex: '1', transform: 'translate(80%, -50%)'}}>22/12/5</p>
-				
-				
-            </div>
-			<div className="match-history row" style={{height: 100, width: "100%", marginBottom: '25px'}}>
-				<img src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png" style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>
-				<p className="match-score" style={{display: 'flex', flex: 1, transform: 'translate(40%, 100%)'}}>13-9</p>
-				<p className="kda" style={{display: 'flex', flex: '1', transform: 'translate(80%, -50%)'}}>22/12/5</p>
-				
-				
-            </div>
-			<div className="match-history row" style={{height: 100, width: "100%", marginBottom: '25px'}}>
-				<img src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png" style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>
-				<p className="match-score" style={{display: 'flex', flex: 1, transform: 'translate(40%, 100%)'}}>13-9</p>
-				<p className="kda" style={{display: 'flex', flex: '1', transform: 'translate(80%, -50%)'}}>22/12/5</p>
-				
-				
-            </div>
-          </div>
         </div>
       </div>
     </section>
