@@ -34,6 +34,7 @@ const MatchHistory = ({
         <section
             {...props}
             className={outerClasses}
+            
         >
 
                 <div className="container-sm">
