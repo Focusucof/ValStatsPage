@@ -36,7 +36,6 @@ const MatchHistory = ({
             await axios.get('http://localhost:1337/match-history').then(response => {
                 setMatches(response.data);
                 setLoading(false);
-                console.log(response.data);
             })
         });            
     }, []);
