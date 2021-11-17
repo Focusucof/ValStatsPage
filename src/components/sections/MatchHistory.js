@@ -13,6 +13,7 @@ const MatchHistory = ({
     ...props
 }) => {
     const [matches, setMatches] = useState([]);
+    const [loading, setLoading] = useState(true);
 
 
     const outerClasses = classNames(
@@ -31,10 +32,13 @@ const MatchHistory = ({
     );
 
     useEffect(() => {
-        axios.get('http://localhost:1337/match-history').then(response => {
-            setMatches(response.data);
-            console.log(response.data);
-        });      
+        axios.get('http://localhost:1337/').then(async (res) => {
+            await axios.get('http://localhost:1337/match-history').then(response => {
+                setMatches(response.data);
+                setLoading(false);
+                console.log(response.data);
+            })
+        });            
     }, []);
 
     return (
@@ -50,7 +54,7 @@ const MatchHistory = ({
                             <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="200">
                                 <div className="match-history row" style={{height: 100, width: "100%", marginBottom: '25px'}}>
                                     <img src=" " style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>
-                                    <h3 className="match-score" style={{}}>13-9</h3>
+                                    <h3 className="match-score" style={{}}>{loading ? "Loading" : JSON.stringify(matches[0].teamScore) + "-" + JSON.stringify(matches[0].enemyScore)} </h3>
                                     <p className="kda" style={{}}>22/12/5</p>
                                     
                                     
