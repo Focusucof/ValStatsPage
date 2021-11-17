@@ -56,7 +56,7 @@ const MatchHistory = ({
                                     {loading ? "" : <img src={"https://media.valorant-api.com/agents/" + matches[0].agent + "/displayiconsmall.png"} style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>}
                                     {/*<img src={"https://media.valorant-api.com/agents/" + loading ? "" : matches[0].agent + "/displayiconsmall.png"} style={{height: 100, width: 100, marginLeft: '0%', display: 'flex', flex: 1}} className="column" alt=""/>*/}
                                     <h3 className="match-score" style={{}}>{loading ? "Loading" : JSON.stringify(matches[0].teamScore) + "-" + JSON.stringify(matches[0].enemyScore)} </h3>
-                                    <p className="kda" style={{}}>22/12/5</p>
+                                    <p className="kda" style={{}}>{loading ? "" : JSON.stringify(matches[0].kills) + "/" + JSON.stringify(matches[0].deaths) + "/" + JSON.stringify(matches[0].assists)}</p>
                                     
                                     
                                 </div>
