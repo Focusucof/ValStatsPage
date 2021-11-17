@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
+import axios from 'axios';
 
 const MatchHistory = ({
     className,
@@ -14,6 +12,8 @@ const MatchHistory = ({
     invertColor,
     ...props
 }) => {
+    const [matches, setMatches] = useState([]);
+
 
     const outerClasses = classNames(
         'hero section center-content',
@@ -29,6 +29,13 @@ const MatchHistory = ({
         topDivider && 'has-top-divider',
         bottomDivider && 'has-bottom-divider'
     );
+
+    useEffect(() => {
+        axios.get('http://localhost:1337/match-history').then(response => {
+            setMatches(response.data);
+            console.log(response.data);
+        });      
+    }, []);
 
     return (
         <section
