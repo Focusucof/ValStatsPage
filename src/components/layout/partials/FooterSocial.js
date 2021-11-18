@@ -19,17 +19,17 @@ const FooterSocial = ({
     >
       <ul className="list-reset">
         <li>
-          <a href="https://github.com/Focusucof" target="_blank">
+          <a href="https://github.com/Focusucof" target="_blank" rel="noopener noreferrer">
             <GitHub />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/_Focusucof" target="_blank">
+          <a href="https://twitter.com/_Focusucof" target="_blank" rel="noopener noreferrer">
             <Twitter />
           </a>
         </li>
         <li>
-          <a href="https://www.twitch.tv/firstfocus" target="_blank">
+          <a href="https://www.twitch.tv/firstfocus" target="_blank" rel="noopener noreferrer">
             <Twitch />
           </a>
         </li>
