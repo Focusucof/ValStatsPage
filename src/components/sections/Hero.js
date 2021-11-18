@@ -78,7 +78,7 @@ const Hero = ({
                 {/* {loading ? "" : <span style={{color: '#E95678'}}>{info.rank}</span>}
 				{loading ? "" : <span> #{info.leaderboardPlace}</span>} */}
 				{loading ? "" : <FadeIn><span style={{color: '#E95678'}}>{info.rank}</span></FadeIn>}
-				{loading ? "" : <div style={{paddingTop: '15px'}}><FadeIn delay='300'><span> {"#" + info.leaderboardPlace} </span></FadeIn></div>}
+				{!loading && info.leaderboardPlace ? <div style={{paddingTop: '15px'}}><FadeIn delay='300'><span> {"#" + info.leaderboardPlace} </span></FadeIn></div> : ""}
               </p>
             </div>
           </div>
