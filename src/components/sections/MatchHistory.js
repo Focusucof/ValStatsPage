@@ -31,6 +31,8 @@ const MatchHistory = ({
         bottomDivider && 'has-bottom-divider'
     );
 
+    
+
     useEffect(() => {
         axios.get('http://localhost:1337/').then(async (res) => {
             await axios.get('http://localhost:1337/match-history').then(response => {
@@ -44,9 +46,7 @@ const MatchHistory = ({
         <section
             {...props}
             className={outerClasses}
-            
         >
-
                 <div className="container-sm">
                     <div className={innerClasses}>
                         <div className="hero-content">
