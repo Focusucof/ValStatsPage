@@ -53,8 +53,8 @@ const Hero = ({
   );
 
   useEffect(() => {
-		axios.get('http://localhost:1337/').then(async (res) => {
-			await axios.get('http://localhost:1337/rank-info').then(response => {
+		axios.get('https://140.238.155.211:8080/').then(async (res) => {
+			await axios.get('https://140.238.155.211:8080/rank-info').then(response => {
 				setInfo(response.data);
 				setLoading(false);
 			});
