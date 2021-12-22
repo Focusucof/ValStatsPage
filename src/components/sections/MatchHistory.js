@@ -35,8 +35,8 @@ const MatchHistory = ({
     
 
     useEffect(() => {
-        axios.get('http://140.238.155.211:8080/').then(async (res) => {
-            await axios.get('http://140.238.155.211:8080/match-history').then(response => {
+        axios.get('https://api.dev1n.tech/').then(async (res) => {
+            await axios.get('https://api.dev1n.tech/match-history').then(response => {
                 setMatches(response.data);
                 setLoading(false);
             })
